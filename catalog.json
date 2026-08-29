@@ -1,0 +1,452 @@
+[
+  {
+    "title": "Normal",
+    "year": 2026,
+    "genre": "Action",
+    "recent": true
+  },
+  {
+    "title": "La Corde au cou",
+    "year": 2026,
+    "genre": "Thriller",
+    "recent": true
+  },
+  {
+    "title": "The Whisper Man",
+    "year": 2026,
+    "genre": "Thriller",
+    "recent": true
+  },
+  {
+    "title": "The Secret Woman",
+    "year": 2026,
+    "genre": "Drame",
+    "recent": true
+  },
+  {
+    "title": "Desert Warrior",
+    "year": 2026,
+    "genre": "Action",
+    "recent": true
+  },
+  {
+    "title": "Grand Theft Auto VI : un large aperçu",
+    "year": 2026,
+    "genre": "Action",
+    "trend": 1
+  },
+  {
+    "title": "Capitaine",
+    "year": 2026,
+    "genre": "Drame"
+  },
+  {
+    "title": "Good Luck, Have Fun, Don't Die",
+    "year": 2026,
+    "genre": "Science-Fiction",
+    "trend": 3
+  },
+  {
+    "title": "Mata",
+    "year": 2026,
+    "genre": "Thriller",
+    "trend": 8
+  },
+  {
+    "title": "L’Arnaqueuse",
+    "year": 2026,
+    "genre": "Comédie",
+    "trend": 5
+  },
+  {
+    "title": "Protector",
+    "year": 2026,
+    "genre": "Action",
+    "trend": 6
+  },
+  {
+    "title": "The Last Sunrise",
+    "year": 2026,
+    "genre": "Drame",
+    "trend": 12
+  },
+  {
+    "title": "The Simpsons - Yellow Mirror",
+    "year": 2026,
+    "genre": "Animation",
+    "trend": 9
+  },
+  {
+    "title": "LifeHack",
+    "year": 2026,
+    "genre": "Thriller"
+  },
+  {
+    "title": "The Outer Threat",
+    "year": 2026,
+    "genre": "Science-Fiction",
+    "trend": 10
+  },
+  {
+    "title": "Bang",
+    "year": 2025,
+    "genre": "Action",
+    "trend": 11
+  },
+  {
+    "title": "The Fires",
+    "year": 2026,
+    "genre": "Thriller"
+  },
+  {
+    "title": "LEGO Disney Princesse : Les aventures au Château",
+    "year": 2026,
+    "genre": "Animation"
+  },
+  {
+    "title": "Back to the 90s",
+    "year": 2026,
+    "genre": "Comédie"
+  },
+  {
+    "title": "What We Dreamed of Then",
+    "year": 2026,
+    "genre": "Drame"
+  },
+  {
+    "title": "Facing El Chapo",
+    "year": 2026,
+    "genre": "Action"
+  },
+  {
+    "title": "Bagarre",
+    "year": 2026,
+    "genre": "Comédie",
+    "trend": 4
+  },
+  {
+    "title": "Cap Farewell",
+    "year": 2026,
+    "genre": "Drame"
+  },
+  {
+    "title": "Pour le meilleur",
+    "year": 2026,
+    "genre": "Drame"
+  },
+  {
+    "title": "Soumsoum, la nuit des astres",
+    "year": 2026,
+    "genre": "Drame"
+  },
+  {
+    "title": "Toy Story 5",
+    "year": 2026,
+    "genre": "À l'affiche",
+    "trend": 2
+  },
+  {
+    "title": "Des Minions et des monstres",
+    "year": 2026,
+    "genre": "À l'affiche",
+    "trend": 7
+  },
+  {
+    "title": "On l'appelait Robin des Bois",
+    "year": 2026,
+    "genre": "À l'affiche",
+    "trend": 15
+  },
+  {
+    "title": "Evil Dead Burn",
+    "year": 2026,
+    "genre": "À l'affiche"
+  },
+  {
+    "title": "Supergirl",
+    "year": 2026,
+    "genre": "À l'affiche",
+    "trend": 13
+  },
+  {
+    "title": "Les Maîtres de l'Univers",
+    "year": 2026,
+    "genre": "À l'affiche"
+  },
+  {
+    "title": "Disclosure Day",
+    "year": 2026,
+    "genre": "À l'affiche"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "year": 2026,
+    "genre": "À l'affiche"
+  },
+  {
+    "title": "Scary Movie",
+    "year": 2026,
+    "genre": "À l'affiche"
+  },
+  {
+    "title": "Backrooms",
+    "year": 2026,
+    "genre": "À l'affiche"
+  },
+  {
+    "title": "Obsession",
+    "year": 2026,
+    "genre": "À l'affiche"
+  },
+  {
+    "title": "Le Diable s'habille en Prada 2",
+    "year": 2026,
+    "genre": "À l'affiche"
+  },
+  {
+    "title": "Michael",
+    "year": 2026,
+    "genre": "À l'affiche",
+    "trend": 14
+  },
+  {
+    "title": "Mortal Kombat II",
+    "year": 2026,
+    "genre": "À l'affiche"
+  },
+  {
+    "title": "Marsupilami",
+    "year": 2026,
+    "genre": "À l'affiche"
+  },
+  {
+    "title": "Le Réveil de la Momie",
+    "year": 2026,
+    "genre": "À l'affiche"
+  },
+  {
+    "title": "Projet dernière chance",
+    "year": 2026,
+    "genre": "À l'affiche"
+  },
+  {
+    "title": "Super Mario Galaxy, le film",
+    "year": 2026,
+    "genre": "À l'affiche"
+  },
+  {
+    "title": "The Drama",
+    "year": 2026,
+    "genre": "À l'affiche"
+  },
+  {
+    "title": "Jumpers",
+    "year": 2026,
+    "genre": "À l'affiche"
+  },
+  {
+    "title": "Scream 7",
+    "year": 2026,
+    "genre": "À l'affiche"
+  },
+  {
+    "title": "Avatar : De feu et de cendres",
+    "year": 2025,
+    "genre": "À l'affiche"
+  },
+  {
+    "title": "Reconnu coupable",
+    "year": 2026,
+    "genre": "À l'affiche"
+  },
+  {
+    "title": "28 Ans plus tard : Le Temple des morts",
+    "year": 2026,
+    "genre": "À l'affiche"
+  },
+  {
+    "title": "Marty Supreme",
+    "year": 2026,
+    "genre": "À l'affiche"
+  },
+  {
+    "title": "Toy Story 4",
+    "year": 2019,
+    "genre": "Animation"
+  },
+  {
+    "title": "Toy Story 3",
+    "year": 2010,
+    "genre": "Animation"
+  },
+  {
+    "title": "Toy Story 2",
+    "year": 2000,
+    "genre": "Animation"
+  },
+  {
+    "title": "Toy Story",
+    "year": 1995,
+    "genre": "Animation"
+  },
+  {
+    "title": "Les Minions 2 : Il était une fois Gru",
+    "year": 2022,
+    "genre": "Animation"
+  },
+  {
+    "title": "Les Minions",
+    "year": 2015,
+    "genre": "Animation"
+  },
+  {
+    "title": "L'Héroïne au ruban",
+    "year": 2026,
+    "genre": "Animation"
+  },
+  {
+    "title": "Storm on Sesame Street",
+    "year": 2026,
+    "genre": "Animation"
+  },
+  {
+    "title": "Snoopy présente : Rien ne vaut son chez-soi",
+    "year": 2026,
+    "genre": "Animation"
+  },
+  {
+    "title": "Demon Slayer : La Forteresse infinie",
+    "year": 2025,
+    "genre": "Animation"
+  },
+  {
+    "title": "Demon Slayer : Le train de l'Infini",
+    "year": 2021,
+    "genre": "Animation"
+  },
+  {
+    "title": "Avatar Aang : Le dernier Maître de l'Air",
+    "year": 2026,
+    "genre": "Animation"
+  },
+  {
+    "title": "Walter Lapin",
+    "year": 2026,
+    "genre": "Animation"
+  },
+  {
+    "title": "Planètes",
+    "year": 2026,
+    "genre": "Animation"
+  },
+  {
+    "title": "Gare aux loups",
+    "year": 2016,
+    "genre": "Animation"
+  },
+  {
+    "title": "Jimmy Neutron : Un Garçon Génial",
+    "year": 2001,
+    "genre": "Animation"
+  },
+  {
+    "title": "L'Envers du sport : Le témoignage de Vince Young",
+    "year": 2026,
+    "genre": "Documentaire"
+  },
+  {
+    "title": "Freefall : Boeing au banc des accusés",
+    "year": 2026,
+    "genre": "Documentaire"
+  },
+  {
+    "title": "Jackass: Best and Last",
+    "year": 2026,
+    "genre": "Documentaire"
+  },
+  {
+    "title": "Dakar Chronicles",
+    "year": 2026,
+    "genre": "Documentaire"
+  },
+  {
+    "title": "Big Chicken : Le complot de la malbouffe",
+    "year": 2026,
+    "genre": "Documentaire"
+  },
+  {
+    "title": "Marché de dupes : Le scandale Trustor",
+    "year": 2026,
+    "genre": "Documentaire"
+  },
+  {
+    "title": "Zidane, nouvelle vie",
+    "year": 2014,
+    "genre": "Documentaire"
+  },
+  {
+    "title": "La valse des pingouins",
+    "year": 2026,
+    "genre": "Spectacle"
+  },
+  {
+    "title": "Xavier Niel : Comment devenir Milliardaire",
+    "year": 2026,
+    "genre": "Spectacle"
+  },
+  {
+    "title": "Inès Reg - On est Toujours Ensemble",
+    "year": 2026,
+    "genre": "Spectacle"
+  },
+  {
+    "title": "Benjamin Tranié - Félicitations et tout et tout",
+    "year": 2026,
+    "genre": "Spectacle"
+  },
+  {
+    "title": "Mahaut : Drama Queen",
+    "year": 2026,
+    "genre": "Spectacle"
+  },
+  {
+    "title": "Black Box",
+    "year": 2026,
+    "genre": "Horreur"
+  },
+  {
+    "title": "Speed Demon",
+    "year": 2026,
+    "genre": "Horreur"
+  },
+  {
+    "title": "Mi Amors",
+    "year": 2026,
+    "genre": "Thriller"
+  },
+  {
+    "title": "The Truman Show",
+    "year": 1998,
+    "genre": "Comédie"
+  },
+  {
+    "title": "Camp Rock",
+    "year": 2008,
+    "genre": "Comédie"
+  },
+  {
+    "title": "Camp Rock 2 : Le face à face",
+    "year": 2010,
+    "genre": "Comédie"
+  },
+  {
+    "title": "Camp Rock 3",
+    "year": 2026,
+    "genre": "Comédie"
+  },
+  {
+    "title": "Battle of Oslo",
+    "year": 2026,
+    "genre": "Action"
+  }
+]

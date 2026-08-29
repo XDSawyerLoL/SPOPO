@@ -1,0 +1,20 @@
+Options -Indexes
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Serve existing files/directories normally.
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Preserve Soponov legacy URLs and make the static app act as a SPA.
+RewriteRule ^ index.html [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+<FilesMatch "\.(css|js|json|svg)$">
+Header set Cache-Control "public, max-age=3600"
+</FilesMatch>
+</IfModule>

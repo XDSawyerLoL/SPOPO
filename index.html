@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#06080d">
+  <meta name="description" content="Soponov — catalogue cinéma">
+  <title>Soponov</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/app.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" data-view="home" aria-label="Soponov accueil">
+      <span class="brand-mark">S</span><span>SOPONOV</span>
+    </a>
+    <nav class="nav">
+      <a href="#catalogue" data-view="catalogue">Catalogue</a>
+      <a href="#trends" data-view="trends">Tendances</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Genres">Genres</button>
+  </header>
+
+  <aside class="genres-panel" id="genresPanel" aria-hidden="true">
+    <div class="genres-head"><strong>Explorer par genre</strong><button id="closeGenres">×</button></div>
+    <div class="genre-list" id="genreList"></div>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <div class="eyebrow">LE CINÉMA, SANS LE BRUIT</div>
+        <h1>Tout ce que vous<br><span>voulez voir.</span></h1>
+        <p>Un catalogue clair, rapide et pensé pour trouver un film en quelques secondes.</p>
+        <div class="pill-row">
+          <span>Gratuit</span><span>Illimité</span><span>Ajouts quotidiens</span><span>Zéro pub</span>
+        </div>
+        <div class="search-wrap">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.3-4.3m1.3-5.2A6.5 6.5 0 1 1 5 11.5a6.5 6.5 0 0 1 13 0Z"/></svg>
+          <input id="search" type="search" autocomplete="off" placeholder="Trouvez votre film...">
+          <kbd>⌘ K</kbd>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="latestSection">
+      <div class="section-head">
+        <div><span class="micro">NOUVEAUTÉS</span><h2>Derniers ajouts</h2></div>
+        <button class="link-btn" data-view="catalogue">Voir tout →</button>
+      </div>
+      <div class="rail" id="latestRail"></div>
+    </section>
+
+    <section class="section split-section" id="trendsSection">
+      <div class="section-head">
+        <div><span class="micro">LES PLUS REGARDÉS</span><h2>Top 15 tendances</h2></div>
+        <button class="link-btn" data-view="trends">Classement →</button>
+      </div>
+      <div class="trend-grid" id="trendGrid"></div>
+    </section>
+
+    <section class="section" id="featuredSection">
+      <div class="section-head">
+        <div><span class="micro">PROCHAINEMENT</span><h2>À l'affiche</h2></div>
+        <button class="link-btn" data-genre="À l'affiche">Voir tout →</button>
+      </div>
+      <div class="rail" id="featuredRail"></div>
+    </section>
+
+    <section class="section" id="animationSection">
+      <div class="section-head">
+        <div><span class="micro">POUR TOUS</span><h2>Animations</h2></div>
+        <button class="link-btn" data-genre="Animation">Voir tout →</button>
+      </div>
+      <div class="rail" id="animationRail"></div>
+    </section>
+
+    <section class="section" id="docsSection">
+      <div class="section-head">
+        <div><span class="micro">DÉCOUVRIR</span><h2>Docs & spectacles</h2></div>
+      </div>
+      <div class="rail" id="docsRail"></div>
+    </section>
+
+    <section class="section" id="catalogueSection">
+      <div class="section-head">
+        <div><span class="micro" id="catalogueMicro">TOUT SOPONOV</span><h2 id="catalogueTitle">Explorer le catalogue</h2></div>
+        <span class="count" id="resultCount"></span>
+      </div>
+      <div class="chips" id="chips"></div>
+      <div class="grid" id="catalogueGrid"></div>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose">×</button>
+      <div class="modal-poster" id="modalPoster"></div>
+      <div class="modal-body">
+        <span class="micro" id="modalGenre"></span>
+        <h2 id="modalTitle"></h2>
+        <div class="modal-meta" id="modalMeta"></div>
+        <p>Cette version Hostinger restaure le catalogue public et la navigation de Soponov. La lecture vidéo originale dépendait du backend de l'ancien serveur et n'est pas incluse dans cette reconstruction.</p>
+        <button class="primary" disabled>Lecture indisponible sur la copie de secours</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <a class="brand footer-brand" href="/"><span class="brand-mark">S</span><span>SOPONOV</span></a>
+    <p>Catalogue cinéma — reconstruction Hostinger.</p>
+  </footer>
+
+  <script src="/assets/app.js"></script>
+</body>
+</html>

@@ -1,12 +1,19 @@
-SOPONOV HOSTINGER V2 — AUTONOME
+SOPONOV HOSTINGER V3 — LECTEUR SOPONOV
 
-Cette version corrige le problème de CSS/JS qui ne se chargeait pas.
-Le CSS, le JavaScript et le catalogue sont intégrés dans index.html.
+Cette archive remplace la V2 et inclut le lecteur Soponov intégré.
 
-INSTALLATION :
-1. Vider public_html (ou sauvegarder l’ancienne version).
-2. Décompresser le CONTENU de ce ZIP directement dans public_html.
-3. Vérifier la présence de .htaccess.
-4. Actualiser avec Ctrl+F5.
+INSTALLATION
+1. Supprimer/sauvegarder l’ancienne version de public_html.
+2. Décompresser LE CONTENU de ce ZIP directement dans public_html.
+3. Vérifier :
+   public_html/index.html
+   public_html/.htaccess
+   public_html/media/sources.json
+4. Ctrl+F5.
 
-L’URL historique /35nn2mp44mk/home/soponov contient également une copie complète autonome.
+LECTEUR
+Clique sur n’importe quel film : le Soponov Player s’ouvre.
+Les sources se configurent dans /media/sources.json.
+Le lecteur n’intègre aucune source vidéo tierce par défaut.
+
+L’ancienne route /35nn2mp44mk/home/soponov reste incluse.

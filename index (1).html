@@ -28,6 +28,37 @@ section{padding:38px 4.8vw}.section-title{display:flex;justify-content:space-bet
 footer{margin-top:34px;padding:42px 4.8vw 56px;border-top:1px solid rgba(255,255,255,.06);color:#596272;font-size:10px;display:flex;justify-content:space-between;align-items:center}
 @media(max-width:900px){.trends{grid-template-columns:repeat(3,1fr)}.modal-box{grid-template-columns:190px 1fr}}
 @media(max-width:620px){.top{padding:0 16px;height:61px}.nav{display:none}.hero{min-height:470px;padding:65px 16px 35px}.hero h1{font-size:50px}.hero p{font-size:13px}.hero:after{font-size:90vw;right:-15vw;top:90px}section{padding:30px 16px}.rail{grid-auto-columns:145px}.trends{grid-template-columns:1fr 1fr}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 9px}.modal-box{grid-template-columns:1fr}.modal-art{min-height:155px}.modal-body{padding:23px 18px}.modal-body h2{font-size:25px}footer{padding:35px 16px;display:block}.logo{margin-bottom:12px}}
+
+/* SOPONOV PLAYER V3 */
+.modal{padding:12px}
+.modal-box.player-shell{width:min(1180px,calc(100vw - 24px));height:min(760px,calc(100vh - 24px));display:flex;flex-direction:column;background:#030507;border:1px solid #222c39;border-radius:20px;overflow:hidden}
+.player-stage{position:relative;flex:1;min-height:0;background:#000;display:grid;place-items:center;overflow:hidden}
+.player-stage video{width:100%;height:100%;object-fit:contain;background:#000}
+.player-topbar{position:absolute;left:0;right:0;top:0;z-index:8;display:flex;align-items:center;justify-content:space-between;padding:18px 20px;background:linear-gradient(to bottom,rgba(0,0,0,.88),transparent);transition:opacity .2s}
+.player-titlebox{min-width:0}.player-kicker{font-size:9px;color:var(--lime);font-weight:900;letter-spacing:.18em}.player-title{font-weight:820;font-size:16px;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:70vw}
+.player-close{width:38px;height:38px;border-radius:11px;border:1px solid rgba(255,255,255,.15);background:rgba(9,13,18,.74);color:#fff;font-size:23px;cursor:pointer;backdrop-filter:blur(8px)}
+.player-center{position:absolute;inset:0;z-index:5;display:grid;place-items:center;pointer-events:none}
+.big-play{pointer-events:auto;width:76px;height:76px;border-radius:50%;border:1px solid rgba(255,255,255,.22);background:rgba(7,10,14,.78);backdrop-filter:blur(12px);color:white;font-size:31px;display:grid;place-items:center;cursor:pointer;transition:.18s}
+.big-play:hover{transform:scale(1.06);background:rgba(184,255,87,.94);color:#071000;border-color:var(--lime)}
+.player-empty{position:absolute;inset:0;z-index:4;display:none;place-items:center;text-align:center;padding:30px;background:radial-gradient(circle at 50% 35%,rgba(184,255,87,.08),transparent 35%),#05080c}
+.player-empty.show{display:grid}.player-empty-card{max-width:560px}.player-empty-icon{width:74px;height:74px;border-radius:22px;border:1px solid #263141;background:#0b1118;display:grid;place-items:center;margin:0 auto 18px;font-size:30px;color:var(--lime)}
+.player-empty h3{font-size:25px;margin:0 0 10px;letter-spacing:-.04em}.player-empty p{color:#8f99a9;line-height:1.55;font-size:12px;margin:0}
+.player-controls{position:absolute;left:0;right:0;bottom:0;z-index:9;padding:38px 18px 16px;background:linear-gradient(to top,rgba(0,0,0,.94),rgba(0,0,0,.58) 58%,transparent);transition:opacity .22s}
+.player-shell.idle .player-controls,.player-shell.idle .player-topbar{opacity:0;pointer-events:none}
+.progress-wrap{height:20px;display:flex;align-items:center}
+.progress{width:100%;height:4px;appearance:none;background:linear-gradient(to right,var(--lime) 0 var(--progress,0%),rgba(255,255,255,.25) var(--progress,0%) 100%);border-radius:999px;cursor:pointer;outline:none}
+.progress::-webkit-slider-thumb{appearance:none;width:14px;height:14px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px rgba(184,255,87,.14)}
+.progress::-moz-range-thumb{width:14px;height:14px;border:0;border-radius:50%;background:var(--lime)}
+.ctrl-row{display:flex;align-items:center;gap:8px}.ctrl{width:38px;height:38px;border:0;background:transparent;color:white;border-radius:9px;cursor:pointer;font-size:17px;display:grid;place-items:center}.ctrl:hover{background:rgba(255,255,255,.10)}
+.ctrl.play{background:rgba(255,255,255,.10)}.ctrl.play:hover{background:var(--lime);color:#071000}
+.time{font-size:10px;color:#c2c9d2;font-variant-numeric:tabular-nums;margin:0 7px 0 2px;white-space:nowrap}
+.volume{width:82px;accent-color:var(--lime)}
+.ctrl-spacer{flex:1}.speed{width:auto;padding:0 9px;font-size:10px;font-weight:800}
+.player-info-strip{display:flex;gap:16px;align-items:center;padding:11px 17px;background:#080c11;border-top:1px solid rgba(255,255,255,.06);color:#727d8e;font-size:10px}
+.player-info-strip strong{color:#d9dee6}.status-dot{width:7px;height:7px;border-radius:50%;background:#596273}.status-dot.ready{background:var(--lime);box-shadow:0 0 12px rgba(184,255,87,.5)}
+.toast{position:absolute;z-index:12;left:50%;top:50%;transform:translate(-50%,-50%);padding:10px 13px;border-radius:10px;background:rgba(0,0,0,.75);border:1px solid rgba(255,255,255,.12);font-size:12px;opacity:0;pointer-events:none;transition:.18s}.toast.show{opacity:1}
+@media(max-width:700px){.modal-box.player-shell{width:100%;height:100%;max-height:none;border-radius:0}.modal{padding:0}.volume{display:none}.ctrl.skip{display:none}.player-info-strip{display:none}.player-title{max-width:60vw}.player-controls{padding-left:10px;padding-right:10px}.ctrl{width:34px;height:34px}.speed{display:none}}
+
 </style></head><body>
 <header class="top">
   <a class="logo" href="#"><span class="logo-badge">S</span><span>SOPONOV</span></a>
@@ -55,7 +86,61 @@ footer{margin-top:34px;padding:42px 4.8vw 56px;border-top:1px solid rgba(255,255
 
 <aside class="drawer" id="drawer"><div class="drawer-top"><strong>Explorer par genre</strong><button id="drawerClose">×</button></div><div class="genre-list" id="genres"></div></aside><div class="scrim" id="scrim"></div>
 
-<div class="modal" id="modal"><div class="modal-box"><button class="modal-close" id="modalClose">×</button><div class="modal-art" id="modalArt"></div><div class="modal-body"><div class="small" id="modalGenre"></div><h2 id="modalTitle"></h2><div class="modal-meta" id="modalMeta"></div><p>Cette copie Hostinger restaure le catalogue et l’interface publique de Soponov. Le système de lecture du serveur d’origine n’est pas inclus dans cette reconstruction.</p><button class="disabled" disabled>Lecture indisponible sur la copie de secours</button></div></div></div>
+<div class="modal" id="modal">
+  <div class="modal-box player-shell" id="playerShell">
+    <div class="player-stage" id="playerStage">
+      <video id="video" playsinline preload="metadata"></video>
+
+      <div class="player-topbar">
+        <div class="player-titlebox">
+          <div class="player-kicker" id="modalGenre">SOPONOV PLAYER</div>
+          <div class="player-title" id="modalTitle">Film</div>
+        </div>
+        <button class="player-close" id="modalClose" aria-label="Fermer">×</button>
+      </div>
+
+      <div class="player-empty" id="playerEmpty">
+        <div class="player-empty-card">
+          <div class="player-empty-icon">▶</div>
+          <h3>Source vidéo à connecter</h3>
+          <p id="emptyText">Le lecteur Soponov est prêt. Ajoute l’URL ou le fichier vidéo de ce titre dans <strong>/media/sources.json</strong>.</p>
+        </div>
+      </div>
+
+      <div class="player-center" id="playerCenter">
+        <button class="big-play" id="bigPlay" aria-label="Lecture">▶</button>
+      </div>
+
+      <div class="toast" id="playerToast"></div>
+
+      <div class="player-controls" id="playerControls">
+        <div class="progress-wrap">
+          <input class="progress" id="progress" type="range" min="0" max="1000" value="0" aria-label="Progression">
+        </div>
+        <div class="ctrl-row">
+          <button class="ctrl play" id="playBtn" aria-label="Lecture/Pause">▶</button>
+          <button class="ctrl skip" id="backBtn" aria-label="Reculer de 10 secondes">↶</button>
+          <button class="ctrl skip" id="forwardBtn" aria-label="Avancer de 10 secondes">↷</button>
+          <button class="ctrl" id="muteBtn" aria-label="Muet">🔊</button>
+          <input class="volume" id="volume" type="range" min="0" max="1" step="0.05" value="1" aria-label="Volume">
+          <span class="time"><span id="currentTime">0:00</span> / <span id="duration">0:00</span></span>
+          <span class="ctrl-spacer"></span>
+          <button class="ctrl speed" id="speedBtn" aria-label="Vitesse">1×</button>
+          <button class="ctrl" id="pipBtn" aria-label="Image dans l’image">▣</button>
+          <button class="ctrl" id="fullBtn" aria-label="Plein écran">⛶</button>
+        </div>
+      </div>
+    </div>
+    <div class="player-info-strip">
+      <span class="status-dot" id="statusDot"></span>
+      <strong id="modalMeta">Soponov Player</strong>
+      <span>•</span>
+      <span>Reprise automatique</span>
+      <span>•</span>
+      <span>Raccourcis : Espace · ←/→ · M · F</span>
+    </div>
+  </div>
+</div>
 
 <footer><div class="logo"><span class="logo-badge">S</span><span>SOPONOV</span></div><span>Reconstruction Hostinger</span></footer>
 <script>
@@ -71,8 +156,129 @@ function fill(sel,list,n=16){const b=q(sel);b.innerHTML="";list.slice(0,n).forEa
 function trends(){const b=q("#trends");b.innerHTML="";films.filter(x=>x.trend).sort((a,b)=>a.trend-b.trend).forEach(f=>{let e=document.createElement("div");e.className="trend";e.innerHTML=`<div class="n">${String(f.trend).padStart(2,"0")}</div><div class="trend-text"><strong>${esc(f.title)}</strong><span>${f.year} · ${esc(f.genre)}</span></div>`;e.onclick=()=>openFilm(f);b.appendChild(e)})}
 function render(){const t=q("#search").value.trim().toLocaleLowerCase("fr");let list=films.filter(f=>(genre==="Tous"||f.genre===genre)&&(!t||(`${f.title} ${f.genre} ${f.year}`).toLocaleLowerCase("fr").includes(t)));q("#grid").innerHTML="";list.forEach(f=>q("#grid").appendChild(makeCard(f)));q("#count").textContent=list.length+" titre"+(list.length>1?"s":"");q("#catalogueTitle").textContent=genre==="Tous"?"Explorer le catalogue":genre}
 function setGenre(g){genre=g;qa(".chips button").forEach(b=>b.classList.toggle("on",b.dataset.g===g));render();q("#catalogue").scrollIntoView({behavior:"smooth"})}
-function openFilm(f){const [a,b]=colors(f);q("#modalArt").style.background=`linear-gradient(145deg,${a},${b})`;q("#modalTitle").textContent=f.title;q("#modalGenre").textContent=f.genre.toUpperCase();q("#modalMeta").textContent=`${f.year}${f.trend?" · Tendance #"+f.trend:""}`;q("#modal").classList.add("open")}
-function closeModal(){q("#modal").classList.remove("open")}
+
+let mediaSources={}, currentFilm=null, hlsInstance=null, idleTimer=null, lastVolume=1;
+
+async function loadMediaSources(){
+  try{
+    const r=await fetch("/media/sources.json?ts="+Date.now(),{cache:"no-store"});
+    if(r.ok) mediaSources=await r.json();
+  }catch(e){ mediaSources={}; }
+}
+function mediaEntry(f){
+  let e=mediaSources[f.title] || mediaSources[String(f.id||"")] || f.src || null;
+  if(typeof e==="string") e={src:e};
+  return e;
+}
+function normalizeSrc(s){
+  if(!s) return "";
+  if(/^https?:\/\//i.test(s) || s.startsWith("/")) return s;
+  return "/media/"+s.replace(/^\.?\//,"");
+}
+function fmt(sec){
+  if(!isFinite(sec)||sec<0) return "0:00";
+  sec=Math.floor(sec); const h=Math.floor(sec/3600),m=Math.floor((sec%3600)/60),s=sec%60;
+  return h ? `${h}:${String(m).padStart(2,"0")}:${String(s).padStart(2,"0")}` : `${m}:${String(s).padStart(2,"0")}`;
+}
+function slug(s){return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")}
+function resumeKey(){return currentFilm ? "soponov:resume:"+slug(currentFilm.title) : "soponov:resume"}
+function toast(msg){
+  const t=q("#playerToast");t.textContent=msg;t.classList.add("show");
+  clearTimeout(t._to);t._to=setTimeout(()=>t.classList.remove("show"),850);
+}
+function setPlayerIdle(){
+  clearTimeout(idleTimer);
+  q("#playerShell").classList.remove("idle");
+  const v=q("#video");
+  if(!v.paused && !q("#playerEmpty").classList.contains("show"))
+    idleTimer=setTimeout(()=>q("#playerShell").classList.add("idle"),2300);
+}
+function syncPlayUI(){
+  const v=q("#video"),playing=!v.paused&&!v.ended;
+  q("#playBtn").textContent=playing?"❚❚":"▶";
+  q("#bigPlay").textContent=playing?"❚❚":"▶";
+  q("#bigPlay").style.opacity=playing?"0":"1";
+}
+function syncProgress(){
+  const v=q("#video"),ratio=v.duration? v.currentTime/v.duration:0;
+  q("#progress").value=Math.round(ratio*1000);
+  q("#progress").style.setProperty("--progress",(ratio*100)+"%");
+  q("#currentTime").textContent=fmt(v.currentTime);
+  q("#duration").textContent=fmt(v.duration);
+}
+function saveResume(){
+  const v=q("#video");
+  if(currentFilm && isFinite(v.currentTime) && v.currentTime>4){
+    try{localStorage.setItem(resumeKey(),String(v.currentTime))}catch(e){}
+  }
+}
+function restoreResume(){
+  const v=q("#video"); let t=0;
+  try{t=parseFloat(localStorage.getItem(resumeKey())||"0")}catch(e){}
+  if(t>5 && v.duration && t<v.duration-20){v.currentTime=t;toast("Reprise à "+fmt(t))}
+}
+async function attachSource(entry){
+  const v=q("#video");
+  if(hlsInstance){try{hlsInstance.destroy()}catch(e){} hlsInstance=null}
+  v.pause();v.removeAttribute("src");v.load();
+  const src=normalizeSrc(entry&&entry.src);
+  if(!src){q("#playerEmpty").classList.add("show");q("#statusDot").classList.remove("ready");q("#bigPlay").style.display="none";return false}
+  q("#playerEmpty").classList.remove("show");q("#bigPlay").style.display="grid";
+  const isHls=/\.m3u8($|\?)/i.test(src) || (entry.type||"").includes("mpegurl");
+  if(isHls && !v.canPlayType("application/vnd.apple.mpegurl")){
+    try{
+      if(!window.Hls){
+        await new Promise((ok,ko)=>{let s=document.createElement("script");s.src="https://cdn.jsdelivr.net/npm/hls.js@1.5.18/dist/hls.min.js";s.onload=ok;s.onerror=ko;document.head.appendChild(s)});
+      }
+      if(window.Hls && Hls.isSupported()){
+        hlsInstance=new Hls({enableWorker:true,lowLatencyMode:false});
+        hlsInstance.loadSource(src);hlsInstance.attachMedia(v);
+      }else throw new Error("HLS indisponible");
+    }catch(e){
+      q("#playerEmpty").classList.add("show");
+      q("#emptyText").innerHTML="Cette source HLS nécessite un navigateur compatible ou le chargement de HLS.js.";
+      return false;
+    }
+  }else{
+    v.src=src;
+  }
+  if(entry.poster) v.poster=normalizeSrc(entry.poster); else v.removeAttribute("poster");
+  if(entry.subtitle){
+    [...v.querySelectorAll("track")].forEach(x=>x.remove());
+    const tr=document.createElement("track");tr.kind="subtitles";tr.label=entry.subtitleLabel||"Français";tr.srclang=entry.subtitleLang||"fr";tr.src=normalizeSrc(entry.subtitle);v.appendChild(tr);
+  }
+  q("#statusDot").classList.add("ready");
+  return true;
+}
+async function openFilm(f){
+  currentFilm=f;
+  q("#modalTitle").textContent=f.title;
+  q("#modalGenre").textContent=f.genre.toUpperCase();
+  q("#modalMeta").textContent=`${f.year}${f.trend?" · Tendance #"+f.trend:""} · SOPONOV PLAYER`;
+  q("#modal").classList.add("open");
+  document.body.style.overflow="hidden";
+  q("#playerShell").classList.remove("idle");
+  q("#emptyText").innerHTML='Le lecteur Soponov est prêt. Ajoute l’URL ou le fichier vidéo de ce titre dans <strong>/media/sources.json</strong>.';
+  const ok=await attachSource(mediaEntry(f));
+  syncPlayUI();syncProgress();setPlayerIdle();
+  if(ok) q("#video").focus?.();
+}
+function closeModal(){
+  saveResume();
+  const v=q("#video");v.pause();
+  if(hlsInstance){try{hlsInstance.destroy()}catch(e){} hlsInstance=null}
+  v.removeAttribute("src");v.load();
+  q("#modal").classList.remove("open");document.body.style.overflow="";
+  currentFilm=null;clearTimeout(idleTimer);
+}
+function togglePlay(){const v=q("#video");if(q("#playerEmpty").classList.contains("show"))return;v.paused?v.play():v.pause()}
+function seekBy(n){const v=q("#video");if(isFinite(v.duration)){v.currentTime=Math.max(0,Math.min(v.duration,v.currentTime+n));toast((n>0?"+":"")+n+" s")}}
+function toggleMute(){const v=q("#video");if(v.muted||v.volume===0){v.muted=false;v.volume=lastVolume||1}else{lastVolume=v.volume||1;v.muted=true}syncVolume()}
+function syncVolume(){const v=q("#video");q("#volume").value=v.muted?0:v.volume;q("#muteBtn").textContent=(v.muted||v.volume===0)?"🔇":v.volume<.5?"🔉":"🔊"}
+async function togglePip(){const v=q("#video");try{if(document.pictureInPictureElement)await document.exitPictureInPicture();else if(document.pictureInPictureEnabled)await v.requestPictureInPicture()}catch(e){toast("PiP indisponible")}}
+async function toggleFull(){try{if(document.fullscreenElement)await document.exitFullscreen();else await q("#playerShell").requestFullscreen()}catch(e){toast("Plein écran indisponible")}}
+function cycleSpeed(){const v=q("#video"),speeds=[.75,1,1.25,1.5,2],i=speeds.indexOf(v.playbackRate),n=speeds[(i+1)%speeds.length];v.playbackRate=n;q("#speedBtn").textContent=n+"×";toast("Vitesse "+n+"×")}
+
 function openDrawer(){q("#drawer").classList.add("open");q("#scrim").classList.add("open")}
 function closeDrawer(){q("#drawer").classList.remove("open");q("#scrim").classList.remove("open")}
 function init(){
@@ -86,7 +292,34 @@ function init(){
  render();
  q("#search").oninput=render;q("#genreBtn").onclick=openDrawer;q("#drawerClose").onclick=closeDrawer;q("#scrim").onclick=closeDrawer;q("#modalClose").onclick=closeModal;q("#modal").onclick=e=>{if(e.target===q("#modal"))closeModal()};
  qa("[data-jump]").forEach(b=>b.onclick=()=>q(b.dataset.jump).scrollIntoView({behavior:"smooth"}));
- document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeModal();closeDrawer()}if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==="k"){e.preventDefault();q("#search").focus()}})
+
+ const v=q("#video");
+ q("#playBtn").onclick=togglePlay;q("#bigPlay").onclick=togglePlay;
+ q("#backBtn").onclick=()=>seekBy(-10);q("#forwardBtn").onclick=()=>seekBy(10);
+ q("#muteBtn").onclick=toggleMute;q("#volume").oninput=e=>{v.muted=false;v.volume=parseFloat(e.target.value);lastVolume=v.volume;syncVolume()};
+ q("#progress").oninput=e=>{if(v.duration)v.currentTime=(parseFloat(e.target.value)/1000)*v.duration};
+ q("#speedBtn").onclick=cycleSpeed;q("#pipBtn").onclick=togglePip;q("#fullBtn").onclick=toggleFull;
+ v.addEventListener("play",()=>{syncPlayUI();setPlayerIdle()});v.addEventListener("pause",()=>{syncPlayUI();q("#playerShell").classList.remove("idle");saveResume()});
+ v.addEventListener("timeupdate",()=>{syncProgress();if(Math.floor(v.currentTime)%10===0)saveResume()});
+ v.addEventListener("loadedmetadata",()=>{syncProgress();restoreResume()});v.addEventListener("volumechange",syncVolume);
+ v.addEventListener("ended",()=>{syncPlayUI();try{localStorage.removeItem(resumeKey())}catch(e){}});
+ v.addEventListener("error",()=>{if(currentFilm){q("#playerEmpty").classList.add("show");q("#emptyText").textContent="La source vidéo ne peut pas être lue. Vérifie son URL ou le fichier dans /media/.";q("#statusDot").classList.remove("ready")}});
+ q("#playerStage").addEventListener("mousemove",setPlayerIdle);q("#playerStage").addEventListener("touchstart",setPlayerIdle,{passive:true});
+ q("#playerStage").addEventListener("dblclick",e=>{const r=q("#playerStage").getBoundingClientRect();if(e.clientX<r.left+r.width*.35)seekBy(-10);else if(e.clientX>r.left+r.width*.65)seekBy(10);else toggleFull()});
+ syncVolume();
+
+ document.addEventListener("keydown",e=>{
+   const playerOpen=q("#modal").classList.contains("open");
+   if(e.key==="Escape"){if(playerOpen)closeModal();else closeDrawer();return}
+   if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==="k"&&!playerOpen){e.preventDefault();q("#search").focus();return}
+   if(!playerOpen)return;
+   if([" ","k","K"].includes(e.key)){e.preventDefault();togglePlay()}
+   else if(e.key==="ArrowLeft"){e.preventDefault();seekBy(-10)}
+   else if(e.key==="ArrowRight"){e.preventDefault();seekBy(10)}
+   else if(e.key.toLowerCase()==="m")toggleMute()
+   else if(e.key.toLowerCase()==="f")toggleFull()
+   else if(e.key.toLowerCase()==="p")togglePip()
+ });
 }
-init();
+loadMediaSources().finally(init);
 </script></body></html>

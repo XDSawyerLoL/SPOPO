@@ -1,0 +1,11 @@
+{
+  "_README": "Associe un titre exact du catalogue à une source vidéo que tu héberges ou que tu es autorisé à diffuser.",
+  "EXEMPLE — remplace ou supprime cette entrée": {
+    "src": "/media/mon-film.mp4",
+    "type": "video/mp4",
+    "poster": "/media/mon-film.jpg",
+    "subtitle": "/media/mon-film-fr.vtt",
+    "subtitleLang": "fr",
+    "subtitleLabel": "Français"
+  }
+}
